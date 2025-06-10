@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <p>Please fill out this form with the required information</p>
+
+    <form action="">
+        <div class="info">
+            <label for="first">Enter Your First Name:</label>
+            <input type="text" id="first" name="first">
+
+            <label for="last">Enter Your Last Name:</label>
+            <input type="text" id="last" name="last">
+
+            <label for="email">Enter Your Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="pass">Create a New Password:</label>
+            <input type="password" id="pass" name="pass">
+        </div>
+
+        <hr>
+
+        Account type (required)
+
+        <div class="account">
+            <input type="radio" value="Personal" id="personal" name="type">
+            <label for="personal">Personal</label><br>
+            <input type="radio" value="Business" id="business" name="type">
+            <label for="business">Business</label>
+        </div>
+
+        <hr>
+
+        <div class="biometeric">
+            <label for="file">Upload a profile picture: </label>
+            <input type="file" name="file" id="file">
+
+            <label for="age">Input your age (years):</label>
+            <input type="number" name="age" id="age">
+
+            <label for="opt">How did you hear about us?</label>
+            <select name="dropdown" id="opt">
+                <option value="select">(select one)</option>
+                <option value="News">News</option>
+                <option value="Youtube Channel">Youtube Channel</option>
+                <option value="Forum">Forum</option>
+                <option value="other">other</option>
+            </select>
+
+            <label for="bio">Provide a bio:</label>
+            <textarea name="bio" id="bio" placeholder="I like coding on the beach..."></textarea>
+        </div>
+
+        <div class="terms">
+            <input type="checkbox" name="t&c" id="t&c">
+            <label for="t&c">I accept the <a href="">terms and conditions</a></label>
+        </div>
+
+        <input type="submit" name="submit" id="submit">
+
+    </form>
+</body>
+
+</html>
